@@ -9,6 +9,15 @@
   </head>
 
   <body>
+    <header>
+      <div>
+      <h1>Welcome to the Randomizer!</h1>
+      <h2>Refresh the page to find a new #!</h2>
+    </div>
+    </header>
+    <div align="center">
+  <%= [*5..30].sample %>
+  </div>
     <%= yield %>
   </body>
 </html>
