@@ -10,14 +10,17 @@
 
   <body>
     <header>
-      <div>
+      <div align="center">
       <h1>Welcome to the Randomizer!</h1>
       <h2>Refresh the page to find a new #!</h2>
+      <%= link_to 'Sign in As a Guest', new_guest_path %>
     </div>
     </header>
     <div align="center">
   <%= [*5..30].sample %>
   </div>
     <%= yield %>
+    <br />
+    <br />
   </body>
 </html>
